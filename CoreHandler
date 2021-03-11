@@ -1,3 +1,5 @@
+--THIS LOGS HWID, ROBLOX USERNAME, GAME LINK, GAME NAME, AGE, PREMIUM.`
+--LOGS ARE PRIVATE TOO ME ONLY ITS USED FOR TRAFFIC CONTROL`
 pcall(function()
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Unknown-publisher/Library/main/CoreHandler", true))()
 local Main = Library:CreateMain()
