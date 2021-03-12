@@ -6,6 +6,15 @@ local Main = Library:CreateMain()
 local Tab1 = Library:NewTab("General")
 local tool = "Hypnocoin"
 
+local Button = Library:NewButton("Tab1", "Destroy Map", function(Button)
+for i, v in pairs(game.Workspace:GetDescendants()) do
+    if v:IsA("Part") or ("MeshPart") or ("TrussPart") or ("WedgePart") or ("BasePart") or ("UnionOperation") or ("WedgePart") then
+        local ohInstance1 = v
+        local ohNumber2 = 1
+        game:GetService("ReplicatedStorage").Transparency:FireServer(ohInstance1, ohNumber2)
+    end
+end
+
 local Button = Library:NewButton("Tab1", "Redeem Coins", function(Button)
     for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
         if v:IsA("Tool") and v.Name == tool then
